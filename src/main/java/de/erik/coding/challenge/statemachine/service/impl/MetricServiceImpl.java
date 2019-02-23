@@ -4,8 +4,10 @@ import de.erik.coding.challenge.statemachine.service.MetricService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 import static java.util.function.Function.identity;
@@ -24,7 +26,10 @@ public class MetricServiceImpl implements MetricService {
     }
 
     private Map<String, Long> getAllPossibleEndStatesWithDefaultMetrics() {
-        return this.validStates.stream().collect(Collectors.toMap(e -> e, e -> Long.valueOf(0)));
+        return this.validStates.stream().collect(Collectors.toMap(e -> e, e -> Long.valueOf(0),
+                (v1,v2) ->{ throw new RuntimeException(String.format("Duplicate key for values %s and %s", v1, v2));},
+                LinkedHashMap::new));
+        // LinkedHashMap is used just to keep the ordering! Could be dropped completely when ordering is not important!
     }
 
     private Map<String, Long> getMetricsForEndstates(final List<String> endStates) {
