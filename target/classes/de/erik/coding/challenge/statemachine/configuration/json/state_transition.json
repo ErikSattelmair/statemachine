@@ -1,0 +1,62 @@
+[
+  {
+    "initialState":"F",
+    "drugs":["AS"],
+    "endState":"H"
+  },
+  {
+    "initialState":"T",
+    "drugs":["AN"],
+    "endState":"H"
+  },
+  {
+    "initialState":"D",
+    "drugs":["I"],
+    "endState":"D"
+  },
+  {
+    "initialState":"D",
+    "drugs":[],
+    "endState":"X"
+  },
+  {
+    "initialState":"H",
+    "drugs":["I", "AN"],
+    "endState":"F"
+  },
+  {
+    "initialState":"F",
+    "drugs":["P"],
+    "endState":"H"
+  },
+  {
+    "initialState":"F",
+    "drugs":["P", "AS"],
+    "endState":"X"
+  },
+  {
+    "initialState":"H",
+    "drugs":["P", "AS"],
+    "endState":"X"
+  },
+  {
+    "initialState":"D",
+    "drugs":["P", "AS"],
+    "endState":"X"
+  },
+  {
+    "initialState":"T",
+    "drugs":["P", "AS"],
+    "endState":"X"
+  },
+  {
+    "initialState":"X",
+    "drugs":["P", "AS"],
+    "endState":"X"
+  },
+  {
+    "initialState":"X",
+    "drugs":["SM"],
+    "endState":"H"
+  }
+]

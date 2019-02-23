@@ -1,0 +1,15 @@
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateMachineServiceImpl.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReader.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateConfigurationJSONFileReader.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/StateMachineService.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/InputValidatorService.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputConverterServiceImpl.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/InputConverterService.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/Application.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/OutputService.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/domain/StateTransition.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/MetricService.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java
+/Users/erik/IdeaProjects/statemachine/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StdOutOutputServiceImpl.java
