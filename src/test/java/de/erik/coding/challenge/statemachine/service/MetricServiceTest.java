@@ -13,7 +13,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 
 import static org.junit.Assert.assertEquals;
 
@@ -26,17 +28,15 @@ public class MetricServiceTest {
 
     @Test
     public void createMetricToken_should_return_metric_token_for_given_input() {
-        assertEquals("D:2,F:2,X:2,H:1", this.metricService.createMetricToken(Lists.newArrayList("H", "F", "X", "X", "D", "F", "D")));
-        assertEquals("D:0,F:0,X:0,H:0", this.metricService.createMetricToken(Lists.emptyList()));
+        assertEquals("T:0,D:2,F:2,X:2,H:1", this.metricService.createMetricToken(Lists.newArrayList("H", "F", "X", "X", "D", "F", "D")));
+        assertEquals("T:0,D:0,F:0,X:0,H:0", this.metricService.createMetricToken(Lists.emptyList()));
     }
 
     public static class Configuration {
 
         @Bean
-        public List<StateTransition> stateTransitions() throws IOException {
-            final ObjectMapper mapper = new ObjectMapper();
-            return mapper.readValue(new ClassPathResource("de/erik/coding/challenge/statemachine/configuration/json/state_transition.json").getInputStream(),
-                    mapper.getTypeFactory().constructCollectionType(List.class, StateTransition.class));
+        public List<String> stateTransitions() throws IOException {
+            return TestUtils.readProperty("statemachine.valid.states");
         }
 
         @Bean

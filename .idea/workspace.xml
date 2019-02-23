@@ -3,15 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="c85d28c4-9163-4a9b-8ac4-8e7b1bd10ed9" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json/state_transition.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputConverterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputConverterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputConverterServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputConverterServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/json/state_transition.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/json/state_transition.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/statemachine-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/erik/coding/challenge/statemachine/service/StateMachineServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/erik/coding/challenge/statemachine/service/StateMachineServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/erik/coding/challenge/statemachine/service/MetricServiceTest$Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/erik/coding/challenge/statemachine/service/MetricServiceTest$Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/erik/coding/challenge/statemachine/service/MetricServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/erik/coding/challenge/statemachine/service/MetricServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,10 +34,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputConverterServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,10 +46,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReaderTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="60" column="85" selection-start-line="60" selection-start-column="85" selection-end-line="60" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,17 +100,12 @@
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/OutputService.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/domain/StateTransition.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateConfigurationJSONFileReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/InputValidatorService.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StdOutOutputServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/OutputServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/StateMachineConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/MetricService.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/StateMachineService.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateMachineServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/Application.java" />
@@ -104,6 +116,13 @@
         <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputConverterServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputConverterServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json/statemachine.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/TestUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java" />
       </list>
     </option>
   </component>
@@ -179,6 +198,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="statemachine" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statemachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statemachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statemachine" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -204,7 +232,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statemachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statemachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
               <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statemachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statemachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="statemachine" type="b2602c69:ProjectViewProjectNode" />
@@ -240,7 +286,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statemachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statemachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,7 +304,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550931870693" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550934823019" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -260,11 +315,13 @@
       <recent name="de.erik.coding.challenge.statemachine" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/properties" />
       <recent name="$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/json" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/de.erik.coding.challenge.statemachine/configuration/xml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/properties" />
       <recent name="$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json" />
       <recent name="$PROJECT_DIR$/src/main/resources/de.erik.coding.challenge.statemachine/configuration/json" />
     </key>
@@ -281,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StateMachineServiceTest.processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication">
+  <component name="RunManager" selected="JUnit.InputValidatorServiceTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.erik.coding.challenge.statemachine.Application" />
       <module name="statemachine" />
@@ -292,6 +349,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputValidatorServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="statemachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.erik.coding.challenge.statemachine.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.erik.coding.challenge.statemachine.service" />
+      <option name="MAIN_CLASS_NAME" value="de.erik.coding.challenge.statemachine.service.InputValidatorServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,7 +383,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateMachineServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MetricServiceTest.createMetricToken_should_return_metric_token_for_given_input" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="statemachine" />
       <extension name="coverage">
         <pattern>
@@ -320,8 +392,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.erik.coding.challenge.statemachine.service" />
-      <option name="MAIN_CLASS_NAME" value="de.erik.coding.challenge.statemachine.service.StateMachineServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="de.erik.coding.challenge.statemachine.service.MetricServiceTest" />
+      <option name="METHOD_NAME" value="createMetricToken_should_return_metric_token_for_given_input" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -342,36 +415,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateMachineServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="statemachine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.erik.coding.challenge.statemachine.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.erik.coding.challenge.statemachine.service" />
-      <option name="MAIN_CLASS_NAME" value="de.erik.coding.challenge.statemachine.service.StateMachineServiceTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Application" />
       <item itemvalue="JUnit.MetricServiceTest" />
-      <item itemvalue="JUnit.StateMachineServiceTest" />
-      <item itemvalue="JUnit.StateMachineServiceTest.test" />
       <item itemvalue="JUnit.StateMachineServiceTest.processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication" />
+      <item itemvalue="JUnit.MetricServiceTest.createMetricToken_should_return_metric_token_for_given_input" />
+      <item itemvalue="JUnit.InputValidatorServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StateMachineServiceTest.processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication" />
+        <item itemvalue="JUnit.InputValidatorServiceTest" />
+        <item itemvalue="JUnit.MetricServiceTest.createMetricToken_should_return_metric_token_for_given_input" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.StateMachineServiceTest.processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication" />
         <item itemvalue="JUnit.MetricServiceTest" />
-        <item itemvalue="JUnit.StateMachineServiceTest" />
-        <item itemvalue="JUnit.StateMachineServiceTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -389,15 +446,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MetricServiceTest - 2019.02.23 at 14h 40m 41s.xml">
-      <configuration name="MetricServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MetricServiceTest - 2019.02.23 at 14h 41m 01s.xml">
-      <configuration name="MetricServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MetricServiceTest - 2019.02.23 at 14h 41m 41s.xml">
-      <configuration name="MetricServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MetricServiceTest - 2019.02.23 at 14h 42m 14s.xml">
       <configuration name="MetricServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -419,6 +467,15 @@
     <history-entry file="StateMachineServiceTest_processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication - 2019.02.23 at 15h 19m 33s.xml">
       <configuration name="StateMachineServiceTest.processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MetricServiceTest_createMetricToken_should_return_metric_token_for_given_input - 2019.02.23 at 16h 08m 55s.xml">
+      <configuration name="MetricServiceTest.createMetricToken_should_return_metric_token_for_given_input" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetricServiceTest_createMetricToken_should_return_metric_token_for_given_input - 2019.02.23 at 16h 09m 13s.xml">
+      <configuration name="MetricServiceTest.createMetricToken_should_return_metric_token_for_given_input" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidatorServiceTest - 2019.02.23 at 16h 12m 39s.xml">
+      <configuration name="InputValidatorServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,6 +488,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="280" y="23" width="1400" height="908" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -442,12 +500,12 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="SonarLint" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32965687" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32965687" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32965687" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32965687" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32965687" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32965687" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39950982" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -467,10 +525,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReaderTest.java</url>
-          <line>60</line>
+          <url>file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java</url>
+          <line>47</line>
           <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -480,47 +538,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/ExceptionInInitializerError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="51" lean-forward="true" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding>
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1780#1781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/core/io/Resource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/de.erik.coding.challenge.statemachine/configuration/xml/state_transition.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateConfigurationXMLFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/configuration/xml/state_transition.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/core/io/AbstractFileResolvingResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -567,16 +584,6 @@
           <folding>
             <element signature="e#4740#4741#0" expanded="true" />
             <element signature="e#4787#4788#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -686,16 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="72" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -734,28 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
@@ -773,49 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/StateMachineService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="283" column="12" selection-start-line="283" selection-start-column="12" selection-end-line="283" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateConfigurationJSONFileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,16 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateMachineServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="92" selection-start-line="32" selection-start-column="92" selection-end-line="32" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/InputConverterService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -857,37 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputConverterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json/state_transition.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/json/state_transition.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateMachineServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="45" column="73" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,8 +802,161 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="375">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputConverterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json/valid_states.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json/valid_drugs.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/StateConfigurationFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateConfigurationJSONFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="27" selection-start-line="29" selection-end-line="29" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="361" column="26" selection-start-line="361" selection-start-column="26" selection-end-line="361" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/configuration/ApplicationConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/json/state_transition.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/StateMachineServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/StateMachineServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/MetricServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/erik/coding/challenge/statemachine/service/impl/InputValidatorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/TestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/MetricServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/erik/coding/challenge/statemachine/service/InputValidatorServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="60" column="85" selection-start-line="60" selection-start-column="85" selection-end-line="60" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

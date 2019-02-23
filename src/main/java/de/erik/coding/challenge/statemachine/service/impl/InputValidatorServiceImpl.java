@@ -1,20 +1,19 @@
 package de.erik.coding.challenge.statemachine.service.impl;
 
-import de.erik.coding.challenge.statemachine.domain.StateTransition;
 import de.erik.coding.challenge.statemachine.service.InputValidatorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class InputValidatorServiceImpl implements InputValidatorService {
 
     @Autowired
-    private List<StateTransition> stateTransitions;
+    private List<String> validStates;
+
+    @Autowired
+    private List<String> validDrugs;
 
     @Override
     public boolean isInputStatesValid(final List<String> inputStates) {
@@ -22,9 +21,7 @@ public class InputValidatorServiceImpl implements InputValidatorService {
             throw new IllegalArgumentException("Input states must not be null or empty!");
         }
 
-        final Set<String> validStates = getValidStates();
-
-        return inputStates.stream().anyMatch(validStates::contains);
+        return inputStates.stream().anyMatch(this.validStates::contains);
     }
 
     @Override
@@ -33,26 +30,7 @@ public class InputValidatorServiceImpl implements InputValidatorService {
             return true;
         }
 
-        final Set<String> validDrugs = getValidDrugs();
-
-        return inputDrugs.stream().anyMatch(validDrugs::contains);
-    }
-
-    private Set<String> getValidStates() {
-        return this.stateTransitions
-                .stream()
-                .map(StateTransition::getInitialState)
-                .collect(Collectors.toSet());
-    }
-
-    private Set<String> getValidDrugs() {
-        final Set<String> validDrugs = new HashSet<>();
-
-        for(final StateTransition stateTransition : this.stateTransitions) {
-            validDrugs.addAll(new HashSet<>(stateTransition.getDrugs()));
-        }
-
-        return validDrugs;
+        return inputDrugs.stream().anyMatch(this.validDrugs::contains);
     }
 
 }

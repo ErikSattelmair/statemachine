@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
@@ -30,15 +31,15 @@ public class InputValidatorServiceTest {
 
     @Test
     public void isInputStatesValid_should_return_false_for_given_input() {
-        assertFalse(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("X")));
         assertFalse(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("B")));
-        assertFalse(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("D")));
+        assertFalse(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("Y")));
         assertFalse(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("C")));
     }
 
     @Test
     public void isInputStatesValid_should_return_true_for_given_input() {
-        assertTrue(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("A")));
+        assertTrue(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("T")));
+        assertTrue(this.inputValidatorService.isInputStatesValid(Lists.newArrayList("X")));
     }
 
     @Test
@@ -56,20 +57,20 @@ public class InputValidatorServiceTest {
 
     @Test
     public void isInputDrugsValid_should_return_true_for_given_input() {
-        assertTrue(this.inputValidatorService.isInputDrugsValid(Lists.newArrayList("C")));
-        assertTrue(this.inputValidatorService.isInputDrugsValid(Lists.newArrayList("D")));
+        assertTrue(this.inputValidatorService.isInputDrugsValid(Lists.newArrayList("As")));
+        assertTrue(this.inputValidatorService.isInputDrugsValid(Lists.newArrayList("I")));
     }
 
     public static class Configuration {
 
         @Bean
-        public List<StateTransition> stateTransitions() {
-            final StateTransition stateTransition = new StateTransition();
-            stateTransition.setInitialState("A");
-            stateTransition.setEndState("B");
-            stateTransition.setDrugs(Lists.newArrayList("C", "D"));
+        public List<String> validStates() throws IOException {
+            return TestUtils.readProperty("statemachine.valid.states");
+        }
 
-            return Lists.newArrayList(stateTransition);
+        @Bean
+        public List<String> validDrugs() throws IOException {
+            return TestUtils.readProperty("statemachine.valid.drugs");
         }
 
         @Bean

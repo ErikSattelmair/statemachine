@@ -1,13 +1,11 @@
 package de.erik.coding.challenge.statemachine.service.impl;
 
-import de.erik.coding.challenge.statemachine.domain.StateTransition;
 import de.erik.coding.challenge.statemachine.service.MetricService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import static java.util.function.Function.identity;
@@ -16,7 +14,7 @@ import static java.util.function.Function.identity;
 public class MetricServiceImpl implements MetricService {
 
     @Autowired
-    private List<StateTransition> stateTransitions;
+    private List<String> validStates;
 
     @Override
     public String createMetricToken(final List<String> endStates) {
@@ -26,8 +24,7 @@ public class MetricServiceImpl implements MetricService {
     }
 
     private Map<String, Long> getAllPossibleEndStatesWithDefaultMetrics() {
-        final Set<String> possibleEndStates = this.stateTransitions.stream().map(StateTransition::getEndState).collect(Collectors.toSet());
-        return possibleEndStates.stream().collect(Collectors.toMap(e -> e, e -> Long.valueOf(0)));
+        return this.validStates.stream().collect(Collectors.toMap(e -> e, e -> Long.valueOf(0)));
     }
 
     private Map<String, Long> getMetricsForEndstates(final List<String> endStates) {
