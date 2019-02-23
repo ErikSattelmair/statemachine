@@ -30,12 +30,12 @@ public class InputConverterServiceTest {
         final List<String> result = this.inputConverterService.extractAndConvertInputStates(new String[]{"A,b"});
         assertEquals(2, result.size());
         assertEquals("A", result.get(0));
-        assertEquals("B", result.get(1));
+        assertEquals("b", result.get(1));
 
         final List<String> result2 = this.inputConverterService.extractAndConvertInputStates(new String[]{"A,b", "dweq"});
         assertEquals(2, result2.size());
         assertEquals("A", result2.get(0));
-        assertEquals("B", result2.get(1));
+        assertEquals("b", result2.get(1));
     }
 
     @Test
@@ -43,12 +43,12 @@ public class InputConverterServiceTest {
         final List<String> result = this.inputConverterService.extractAndConvertInputStates(new String[]{"A,b, "});
         assertEquals(2, result.size());
         assertEquals("A", result.get(0));
-        assertEquals("B", result.get(1));
+        assertEquals("b", result.get(1));
 
         final List<String> result2 = this.inputConverterService.extractAndConvertInputStates(new String[]{" A,b,"});
         assertEquals(2, result2.size());
         assertEquals("A", result2.get(0));
-        assertEquals("B", result2.get(1));
+        assertEquals("b", result2.get(1));
     }
 
     @Test
@@ -84,7 +84,7 @@ public class InputConverterServiceTest {
     public void extractAndConvertInputDrugs_should_return_converted_drugs_when_input_drugs_given() {
         final List<String> result = this.inputConverterService.extractAndConvertInputDrugs(new String[]{"a,sd,s", " i,E"});
         assertEquals(2, result.size());
-        assertEquals("I", result.get(0));
+        assertEquals("i", result.get(0));
         assertEquals("E", result.get(1));
     }
 

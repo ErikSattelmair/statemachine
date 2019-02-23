@@ -19,7 +19,7 @@ public class InputConverterServiceImpl implements InputConverterService {
         }
 
         return Arrays.stream(input[0].split(","))
-                .filter(StringUtils::isNotBlank).map(String::toUpperCase).map(StringUtils::strip).collect(Collectors.toList());
+                .filter(StringUtils::isNotBlank).map(StringUtils::strip).collect(Collectors.toList());
     }
 
     @Override
@@ -33,7 +33,7 @@ public class InputConverterServiceImpl implements InputConverterService {
         }
 
         return Arrays.stream(input[1].split(","))
-                .filter(StringUtils::isNotBlank).map(String::toUpperCase).map(StringUtils::strip).collect(Collectors.toList());
+                .filter(StringUtils::isNotBlank).map(StringUtils::strip).collect(Collectors.toList());
     }
 
     private boolean isInputTooShort(final String[] input) {

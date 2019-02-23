@@ -35,7 +35,7 @@ public class StateConfigurationFileReaderTest {
 
         final List<String> drugs = stateTransition.getDrugs();
         assertEquals(1, drugs.size());
-        assertEquals("AS", drugs.get(0));
+        assertEquals("As", drugs.get(0));
 
         assertEquals("H", stateTransition.getEndState());
     }

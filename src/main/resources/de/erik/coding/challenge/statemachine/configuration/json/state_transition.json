@@ -1,12 +1,12 @@
 [
   {
     "initialState":"F",
-    "drugs":["AS"],
+    "drugs":["As"],
     "endState":"H"
   },
   {
     "initialState":"T",
-    "drugs":["AN"],
+    "drugs":["An"],
     "endState":"H"
   },
   {
@@ -21,7 +21,7 @@
   },
   {
     "initialState":"H",
-    "drugs":["I", "AN"],
+    "drugs":["I", "An"],
     "endState":"F"
   },
   {
@@ -31,27 +31,27 @@
   },
   {
     "initialState":"F",
-    "drugs":["P", "AS"],
+    "drugs":["P", "As"],
     "endState":"X"
   },
   {
     "initialState":"H",
-    "drugs":["P", "AS"],
+    "drugs":["P", "As"],
     "endState":"X"
   },
   {
     "initialState":"D",
-    "drugs":["P", "AS"],
+    "drugs":["P", "As"],
     "endState":"X"
   },
   {
     "initialState":"T",
-    "drugs":["P", "AS"],
+    "drugs":["P", "As"],
     "endState":"X"
   },
   {
     "initialState":"X",
-    "drugs":["P", "AS"],
+    "drugs":["P", "As"],
     "endState":"X"
   },
   {
