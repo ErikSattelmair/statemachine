@@ -26,7 +26,13 @@ public class ApplicationConfiguration {
 
     @Bean
     public List<StateTransition> stateTransitions() {
-        return this.stateConfigurationFileReader.readStateTransitions();
+        final Properties properties = new Properties();
+        try {
+            properties.load(this.resource.getInputStream());
+            return this.stateConfigurationFileReader.readStateTransitions(properties.getProperty("statemachine.config.json"));
+        } catch (IOException e) {
+            throw new ExceptionInInitializerError("Error while reading properties file!");
+        }
     }
 
     @Bean

@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class TestUtils {
 
-    public static List<String> readProperty(final String propertyName) throws IOException {
+    public static List<String> readPropertyAsList(final String propertyName) throws IOException {
         final ClassPathResource classPathResource =
                 new ClassPathResource("de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties");
         final Properties properties = new Properties();
@@ -17,4 +17,11 @@ public class TestUtils {
         return Arrays.asList(properties.getProperty(propertyName).split(","));
     }
 
+    public static String readProperty(final String propertyName) throws IOException {
+        final ClassPathResource classPathResource =
+                new ClassPathResource("de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties");
+        final Properties properties = new Properties();
+        properties.load(classPathResource.getInputStream());
+        return properties.getProperty(propertyName);
+    }
 }

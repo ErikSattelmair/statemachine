@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -17,18 +18,20 @@ import static org.junit.Assert.*;
 @ContextConfiguration(classes = StateConfigurationFileReaderTest.Configuration.class)
 public class StateConfigurationFileReaderTest {
 
+    private static final String STATE_MACHINE_CONFIG_PROPERTY = "statemachine.config.json";
+
     @Autowired
     private StateConfigurationFileReader stateConfigurationFileReader;
 
     @Test
-    public void readStateTransitions_should_return_given_number_of_elements() {
-        final List<StateTransition> stateTransitions = this.stateConfigurationFileReader.readStateTransitions();
+    public void readStateTransitions_should_return_given_number_of_elements() throws IOException {
+        final List<StateTransition> stateTransitions = this.stateConfigurationFileReader.readStateTransitions(TestUtils.readProperty(STATE_MACHINE_CONFIG_PROPERTY));
         assertEquals(12, stateTransitions.size());
     }
 
     @Test
-    public void readStateTransitions_should_return_correct_first_element_values() {
-        final List<StateTransition> stateTransitions = this.stateConfigurationFileReader.readStateTransitions();
+    public void readStateTransitions_should_return_correct_first_element_values() throws IOException {
+        final List<StateTransition> stateTransitions = this.stateConfigurationFileReader.readStateTransitions(TestUtils.readProperty(STATE_MACHINE_CONFIG_PROPERTY));
         final StateTransition stateTransition = stateTransitions .get(0);
 
         assertEquals("F", stateTransition.getInitialState());
@@ -41,8 +44,8 @@ public class StateConfigurationFileReaderTest {
     }
 
     @Test
-    public void readStateTransitions_should_return_correct_last_element_values() {
-        final List<StateTransition> stateTransitions = this.stateConfigurationFileReader.readStateTransitions();
+    public void readStateTransitions_should_return_correct_last_element_values() throws IOException {
+        final List<StateTransition> stateTransitions = this.stateConfigurationFileReader.readStateTransitions(TestUtils.readProperty(STATE_MACHINE_CONFIG_PROPERTY));
         final StateTransition stateTransition = stateTransitions .get(stateTransitions.size() - 1);
 
         assertEquals("X", stateTransition.getInitialState());

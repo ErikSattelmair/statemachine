@@ -31,7 +31,7 @@ public class MetricServiceTest {
 
         @Bean
         public List<String> stateTransitions() throws IOException {
-            return TestUtils.readProperty("statemachine.valid.states");
+            return TestUtils.readPropertyAsList("statemachine.valid.states");
         }
 
         @Bean

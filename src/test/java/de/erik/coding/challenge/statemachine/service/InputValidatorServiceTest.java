@@ -65,12 +65,12 @@ public class InputValidatorServiceTest {
 
         @Bean
         public List<String> validStates() throws IOException {
-            return TestUtils.readProperty("statemachine.valid.states");
+            return TestUtils.readPropertyAsList("statemachine.valid.states");
         }
 
         @Bean
         public List<String> validDrugs() throws IOException {
-            return TestUtils.readProperty("statemachine.valid.drugs");
+            return TestUtils.readPropertyAsList("statemachine.valid.drugs");
         }
 
         @Bean

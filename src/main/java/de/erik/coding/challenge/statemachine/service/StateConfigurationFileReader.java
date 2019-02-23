@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface StateConfigurationFileReader {
 
-    List<StateTransition> readStateTransitions();
+    List<StateTransition> readStateTransitions(final String stateTransitionsFilePath);
 
 }
