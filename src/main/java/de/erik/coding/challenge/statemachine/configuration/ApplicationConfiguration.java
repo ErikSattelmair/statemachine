@@ -17,40 +17,36 @@ import java.util.Properties;
 @ComponentScan(basePackages = "de.erik.coding.challenge.statemachine")
 public class ApplicationConfiguration {
 
+    private static final String PROPERTY_FILE_READ_ERROR = "Error while reading properties file";
+    private static final String PROPERTY_NAME_VALID_STATES = "statemachine.valid.states";
+    private static final String PROPERTY_NAME_VALID_DRUGS = "statemachine.valid.drugs";
+    private static final String PROPERTY_NAME_CONFIG_FILE = "statemachine.config.json";
+
     @Value("de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties")
     private Resource resource;
 
     @Bean
     public List<StateTransition> stateTransitions(final StateConfigurationFileReader stateConfigurationFileReader) {
-        final Properties properties = new Properties();
-        try {
-            properties.load(this.resource.getInputStream());
-            return stateConfigurationFileReader.readStateTransitions(properties.getProperty("statemachine.config.json"));
-        } catch (IOException e) {
-            throw new ExceptionInInitializerError("Error while reading properties file!");
-        }
+        return stateConfigurationFileReader.readStateTransitions(loadPropertiesFile().getProperty(PROPERTY_NAME_CONFIG_FILE));
     }
 
     @Bean
     public List<String> validStates() {
-        final Properties properties = new Properties();
-        try {
-            properties.load(this.resource.getInputStream());
-            return Arrays.asList(properties.getProperty("statemachine.valid.states").split(","));
-        } catch (IOException e) {
-            throw new ExceptionInInitializerError("Error while reading properties file!");
-        }
+        return Arrays.asList(loadPropertiesFile().getProperty(PROPERTY_NAME_VALID_STATES).split(","));
     }
 
     @Bean
     public List<String> validDrugs() {
+        return Arrays.asList(loadPropertiesFile().getProperty(PROPERTY_NAME_VALID_DRUGS).split(","));
+    }
+
+    private Properties loadPropertiesFile() {
         final Properties properties = new Properties();
         try {
             properties.load(this.resource.getInputStream());
-            return Arrays.asList(properties.getProperty("statemachine.valid.drugs").split(","));
+            return properties;
         } catch (IOException e) {
-            throw new ExceptionInInitializerError("Error while reading properties file!");
+            throw new ExceptionInInitializerError(PROPERTY_FILE_READ_ERROR);
         }
     }
-
 }
