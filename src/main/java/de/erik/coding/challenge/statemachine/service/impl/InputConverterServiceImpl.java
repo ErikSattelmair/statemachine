@@ -18,8 +18,7 @@ public class InputConverterServiceImpl implements InputConverterService {
             throw new IllegalArgumentException("Input must at least contain one state!");
         }
 
-        return Arrays.stream(input[0].split(","))
-                .filter(StringUtils::isNotBlank).map(StringUtils::strip).collect(Collectors.toList());
+        return extractAndConvertInput(input[0]);
     }
 
     @Override
@@ -32,7 +31,11 @@ public class InputConverterServiceImpl implements InputConverterService {
             return Collections.emptyList();
         }
 
-        return Arrays.stream(input[1].split(","))
+        return extractAndConvertInput(input[1]);
+    }
+
+    private List<String> extractAndConvertInput(final String input) {
+        return Arrays.stream(input.split(","))
                 .filter(StringUtils::isNotBlank).map(StringUtils::strip).collect(Collectors.toList());
     }
 

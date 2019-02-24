@@ -1,6 +1,5 @@
 package de.erik.coding.challenge.statemachine.service;
 
-import de.erik.coding.challenge.statemachine.domain.StateTransition;
 import de.erik.coding.challenge.statemachine.service.impl.InputValidatorServiceImpl;
 import org.assertj.core.util.Lists;
 import org.junit.Test;

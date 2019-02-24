@@ -2,7 +2,6 @@ package de.erik.coding.challenge.statemachine.configuration;
 
 import de.erik.coding.challenge.statemachine.domain.StateTransition;
 import de.erik.coding.challenge.statemachine.service.StateConfigurationFileReader;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -18,18 +17,15 @@ import java.util.Properties;
 @ComponentScan(basePackages = "de.erik.coding.challenge.statemachine")
 public class ApplicationConfiguration {
 
-    @Autowired
-    private StateConfigurationFileReader stateConfigurationFileReader;
-
     @Value("de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties")
     private Resource resource;
 
     @Bean
-    public List<StateTransition> stateTransitions() {
+    public List<StateTransition> stateTransitions(final StateConfigurationFileReader stateConfigurationFileReader) {
         final Properties properties = new Properties();
         try {
             properties.load(this.resource.getInputStream());
-            return this.stateConfigurationFileReader.readStateTransitions(properties.getProperty("statemachine.config.json"));
+            return stateConfigurationFileReader.readStateTransitions(properties.getProperty("statemachine.config.json"));
         } catch (IOException e) {
             throw new ExceptionInInitializerError("Error while reading properties file!");
         }

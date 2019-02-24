@@ -8,6 +8,6 @@ public class StdOutOutputServiceImpl implements OutputService {
 
     @Override
     public void writeResult(final String result) {
-        System.out.println(result);
+        System.out.print(result);
     }
 }

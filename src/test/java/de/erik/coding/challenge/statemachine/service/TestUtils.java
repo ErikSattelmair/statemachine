@@ -9,6 +9,8 @@ import java.util.Properties;
 
 public class TestUtils {
 
+    private TestUtils() {}
+
     public static List<String> readPropertyAsList(final String propertyName) throws IOException {
         final ClassPathResource classPathResource =
                 new ClassPathResource("de/erik/coding/challenge/statemachine/configuration/properties/statemachine.properties");
