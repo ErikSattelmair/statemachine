@@ -27,7 +27,7 @@ public class InputConverterServiceImpl implements InputConverterService {
             throw new IllegalArgumentException("Input must at least contain one state!");
         }
 
-        if(input.length != 2) {
+        if(input.length < 2) {
             return Collections.emptyList();
         }
 

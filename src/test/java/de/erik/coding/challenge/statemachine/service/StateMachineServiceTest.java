@@ -41,9 +41,9 @@ public class StateMachineServiceTest {
         }
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void processState_should_throw_IllegalArgumentException_for_given_initial_state_and_medication() {
-        this.stateMachineService.processState("X", Lists.newArrayList("AS"));
+    @Test
+    public void processState_should_return_initial_state_for_given_initial_state_and_medication() {
+        assertEquals("X", this.stateMachineService.processState("X", Lists.newArrayList("AS")));
     }
 
     public static class Configuration {

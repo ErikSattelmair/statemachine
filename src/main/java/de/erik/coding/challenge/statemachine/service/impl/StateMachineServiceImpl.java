@@ -25,7 +25,7 @@ public class StateMachineServiceImpl implements StateMachineService {
             return relevantStateTransition.get().getEndState();
         }
 
-        throw new IllegalArgumentException("End state can't be reached with given initial state and medication!");
+        return inputState;
     }
 
     private boolean isDrugsRelevantForStateChange(final StateTransition stateTransition, final List<String> inputDrugs) {

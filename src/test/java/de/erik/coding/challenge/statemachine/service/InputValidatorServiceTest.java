@@ -23,9 +23,8 @@ public class InputValidatorServiceTest {
     @Autowired
     private InputValidatorService inputValidatorService;
 
-    @Test(expected = IllegalArgumentException.class)
     public void isInputStatesValid_should_throw_IllegalArgumentException_for_given_input() {
-        this.inputValidatorService.isInputStatesValid(Collections.emptyList());
+       assertFalse(this.inputValidatorService.isInputStatesValid(Collections.emptyList()));
     }
 
     @Test
